@@ -29,6 +29,7 @@ resource "aws_security_group" "vpc-web" {
   name        = "vpc-web"
   description = "Dev VPC Web"
 
+# Multiple inbound rules for web traffic
   ingress {
     description      = "Allow Port 22"
     from_port        = 80
